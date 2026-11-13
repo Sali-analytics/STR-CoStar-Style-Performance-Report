@@ -1,0 +1,37 @@
+Variable,Type,Description,Example or allowed values
+Booking ID,Text,"Unique reservation identifier, numbered in order of booking date",BK100492
+Date,Date,Arrival (check-in) date. The dataset covers every day from 2025-01-01 to 2025-12-31,2025-07-18
+Booking Date,Date,Date the reservation was made (Date minus Lead Time),2025-05-02
+Departure Date,Date,Check-out date (Date plus LOS),2025-07-22
+Hotel,Category,Property of the booking,"City Hotel (60 rooms), Resort Hotel (66 rooms)"
+Room Type,Category,Room category booked,"Standard Room, Superior Room, Deluxe Room, Junior Suite, Suite, Deluxe Garden View, Deluxe Pool View, Family Room, Villa"
+Available Rooms,Integer,Rooms of this type in inventory at this hotel,26
+Occupied Rooms,Integer,"Rooms of this type occupied at this hotel on the night of Date (excludes cancelled bookings). Same value for all rows with the same hotel, room type and date",14
+Hotel Available Rooms,Integer,Total rooms in the hotel,60
+Hotel Occupied Rooms,Integer,Total rooms occupied in the hotel on the night of Date,31
+Hotel Occupancy Rate (%),Decimal,"Hotel Occupied Rooms divided by Hotel Available Rooms, in percent",51.7
+Room Revenue,Decimal (EUR),"ADR multiplied by LOS for stayed bookings, 0 for cancelled bookings",255.09
+Restaurant Revenue,Decimal (EUR),"Food and restaurant spend for the stay, 0 for cancelled bookings",87.68
+Bar Revenue,Decimal (EUR),"Bar spend for the stay, 0 for cancelled bookings",36.14
+Spa Revenue,Decimal (EUR),"Spa and wellness spend for the stay, 0 for cancelled bookings",0.00
+Meeting/Event Revenue,Decimal (EUR),"Meeting and event spend, mainly from Group and Corporate bookings",0.00
+Other Revenue,Decimal (EUR),"Other ancillary spend such as parking, laundry and minibar",45.18
+Total Revenue,Decimal (EUR),"Sum of room, restaurant, bar, spa, meeting/event and other revenue",424.09
+Booking Channel,Category,Channel through which the booking was made,"Online Travel Agency, Direct Website, Phone/Email, Travel Agent/Tour Operator, Global Distribution System, Corporate Booking Tool, Front Desk"
+Market Segment,Category,Type of customer,"Leisure, Business Transient, Corporate Contract, Group, Tour Operator, Complimentary"
+Rate Plan,Category,Rate plan booked,"Best Available Rate, Advance Purchase, Package, Member Rate, Corporate Rate, Group Rate, Wholesale Net Rate, House Use"
+Meal Plan,Category,Meal plan booked,"Room Only, Bed & Breakfast, Half Board, Full Board"
+ADR,Decimal (EUR),Average daily rate per room night. 0 for Complimentary stays,85.03
+LOS,Integer,Length of stay in nights (1 to 14),3
+Lead Time,Integer,Days between Booking Date and Date (0 to 365),137
+Adults,Integer,Number of adults,2
+Children,Integer,Number of children,0
+Total Guests,Integer,Adults plus Children,2
+Guest Country,Category,Guest's country of residence (synthetic mix),"Germany, United Kingdom, France, Netherlands, United States, Italy, Spain, Switzerland, Austria, Poland, Other"
+Repeat Guest,Binary,"1 if the guest has stayed before, 0 otherwise",0
+Group ID,Text,"Block identifier for group bookings. Rows with the same ID share arrival date, lead time and LOS. Blank for non-group bookings",GRP-0007
+Special Event,Category,Demand event on the arrival date at that hotel,"No Event, Trade Fair, Holiday Period"
+Day of Week,Category,Weekday of the arrival date,Wednesday
+Month,Category,Month name of the arrival date,January
+Season,Category,Season of the arrival date (meteorological),"Winter, Spring, Summer, Autumn"
+Cancellation Status,Category,Whether the booking was cancelled before arrival,"Cancelled, Not Cancelled"
