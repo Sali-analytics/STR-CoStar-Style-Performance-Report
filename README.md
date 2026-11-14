@@ -50,7 +50,7 @@ Cumulative pace curves show that Resort Hotel builds its base earlier: **48%** o
 
 Because City Hotel relies heavily on short-lead demand, **24.2%** of its room nights are picked up in the final 7 days and **52.6%** within 30 days of arrival, compared to **9.7%** and **31.9%** at Resort Hotel.
 
-![Room Nights Booked Within 30 Days of Arrival](images/Chart_04_of_room_nights_booked_within_30_days_of_arrival_by_.png)
+![Room Nights Booked Within 30 Days of Arrival](images/Chart_04_of_room_nights_booked_within_30_days_of_arrival_by_arrival_month.png)
 
 ---
 
@@ -109,7 +109,7 @@ By segment, **Group** guests generate the highest ancillary share (**47.3%**), f
 
 ![F and B Revenue per Guest Night by Month](images/Chart_09_F_B_revenue_per_guest_night_by_month.png)
 
-![Meetings and Events Revenue by Market Segment](images/Chart_10_Meetings_Events_revenue_by_market_segment_thous.png)
+![Meetings and Events Revenue by Market Segment](images/Chart_10_Meetings_Events_revenue_by_market_segment_thousand.png)
 
 ---
 
